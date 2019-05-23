@@ -1,0 +1,35 @@
+
+> no celular (android / xiaomi):
+. habilitar o 'Modo Desenvolvedor' 
+  (clicar 7 vezes na versao do sistema = about phone / android version)
+. habilitar a transferencia de arquivos por USB
+  (nas notificacoes do cel, selecionar Use USB to: Transfer files)
+. habilitar a 'Depuracao USB'
+
+> no computador 
+. phonegap create app
+. phonegap serve
+. phonegap run browser
+
+. cordova platform add android
+. cordova plugin add cordova-plugin-contacts
+. cordova build android 
+. cordova build android --device
+. cordova run android 
+  (instala e executa)
+
+ADB (Android Debug Bridge) ferramenta de linha de comando, vem com a sdk do Android
+(localiza-se em android_sdk/platform-tools/)
+. adb devices 
+  (lista aparelhos conectados ao computador)
+. adb install /home/home/Projects/projeto1/platforms/android/app/build/outputs/apk/debug/app-debug.apk 
+  (instala no aparelho)
+. adb usb 
+  (restart adbd listening on USB)
+
+
+
+chrome://inspect/#devices
+
+xrandr -o normal
+
