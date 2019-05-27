@@ -36,11 +36,17 @@ var app = {
         app.listaContatos();
     },
 
-    listaContatos: function() {
-        console.log(navigator.contacts);
-
+    listaContatos: function(query="") {
+        
         function onSuccess(contacts) {
-            alert('Found ' + contacts.length + ' contacts.');
+            // alert('Found ' + contacts.length + ' contacts.');
+            console.log(JSON.stringify(contacts));
+            $('tbody').html("");
+            contacts.map(contact => {
+                let conteudo = `<tr><td>${contact.displayName}</td><td>${contact.phoneNumbers[0].value}</td></tr>`;
+                $('tbody').append(conteudo);
+                return conteudo;
+            })
         };
         
         function onError(contactError) {
@@ -49,11 +55,30 @@ var app = {
         
         // find all contacts with 'Bob' in any name field
         var options      = new ContactFindOptions();
-        // options.filter   = "Bob";
+        options.filter   = query;
         options.multiple = true;
-        options.desiredFields = [navigator.contacts.fieldType.id];
+        // options.desiredFields = [navigator.contacts.fieldType.id];
         options.hasPhoneNumber = true;
         var fields       = [navigator.contacts.fieldType.displayName, navigator.contacts.fieldType.name];
         navigator.contacts.find(fields, onSuccess, onError, options);
+    },
+
+    salvaContato: function (nome, telefone) {
+        function onSuccess() {
+            alert(`Contato gravado com sucesso!`);
+            $('#nome').val("");
+            $('#telefone').val("");
+            app.listaContatos();
+        }
+        function onError(erro) {
+            alert(`ERRO ao tentar gravar! ${erro}`);        
+        }
+        let myContact = navigator.contacts.create({"displayName": nome, "phoneNumbers": [{"value": telefone}]});
+        myContact.save(onSuccess, onError);
+    },
+
+    pesquisaContato(query) {
+        console.log(query);
+        app.listaContatos(query);
     }
 };

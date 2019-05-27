@@ -1,3 +1,4 @@
+----------------------------- AULA 1 ---------------------------------------------------------
 
 > no celular (android / xiaomi):
 . habilitar o 'Modo Desenvolvedor' 
@@ -27,9 +28,26 @@ ADB (Android Debug Bridge) ferramenta de linha de comando, vem com a sdk do Andr
 . adb usb 
   (restart adbd listening on USB)
 
-
-
 chrome://inspect/#devices
 
 xrandr -o normal
+(mostra a tela no sentido correto no ubuntu)
 
+----------------------------- AULA 3 ---------------------------------------------------------
+. Mobile UI
+  https://mobileui.github.io/
+
+> npm install -g mobileui
+> cordova (ou phonegap) create apptest
+> cd apptest
+> mobileui install template cordova-blank
+> mobileui install header
+> mobileui preview
+
+> mobileui install list
+
+----------------------------- AULA 4 ---------------------------------------------------------
+> phonegap plugin add phonegap-plugin-barcodescanner
+> cordova platform add android
+> cordova plugin add cordova-plugin-vibration
+	

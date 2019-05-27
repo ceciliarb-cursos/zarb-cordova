@@ -1,0 +1,30 @@
+<div class="page">
+    <div class="header blue">
+        <div class="left">
+            <button class="icon ion-ios-arrow-back" onclick="backPage()"></button>
+        </div>
+        <h1 class="title align-center">Cadastrar</h1>
+    </div>
+
+    <div class="content has-header">
+        <div class="list">
+            <div class="item label-float">
+                <label>Nome</label>
+                <input type="text" id='nome'>
+            </div>
+            <div class="item label-float">
+                <label>Preco</label>
+                <input type="number" id='preco'>
+            </div>
+            <div class="item">
+                <button class="light-blue-100 icon-text radius full" onclick="app.scan()">
+                    <i class="icon ion-ios-barcode-outline"></i>Barcode
+                </button>
+            </div>
+            <div class="item">
+                <button onclick="app.insere()" class="blue radius full">Inserir</button>
+            </div>
+        </div>
+
+    </div>
+</div>
