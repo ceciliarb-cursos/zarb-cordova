@@ -70,6 +70,16 @@ xrandr -o normal
 . alternativa ao postman
   https://insomnia.rest/
 
+. https://codeburst.io/publish-a-cordova-generated-android-app-to-the-google-play-store-c7ae51cccdd5
+
+> cordova build --release
+> keytool -genkey -v -keystore android.keystore -alias android-app-key -keyalg RSA -keysize 2048 -validity 10000
+  (keytool eh do java jdk)
+> jarsigner -verbose -sigalg SHA1withRSA -digestalg SHA1 -keystore android.keystore app-release-unsigned.apk android-app-key
+> sudo apt install zipalign
+  (vem no android/sdk/build-tools)
+> zipalign -v 4 app-release-unsigned.apk app-release.apk
+
 
 
 
