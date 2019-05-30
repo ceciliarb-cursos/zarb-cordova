@@ -1,0 +1,40 @@
+{
+  "project_info": {
+    "project_number": "875018443362",
+    "firebase_url": "https://zarb-curso-cordova.firebaseio.com",
+    "project_id": "zarb-curso-cordova",
+    "storage_bucket": "zarb-curso-cordova.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:875018443362:android:0bddb67ab638d867",
+        "android_client_info": {
+          "package_name": "com.phonegap.chat"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "875018443362-0m7l2c5gn2ctbtha609n0ro5gepjeplf.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAH-yNfnFrGtsc7QInCp8AH_O4wCaOTuRE"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "875018443362-0m7l2c5gn2ctbtha609n0ro5gepjeplf.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

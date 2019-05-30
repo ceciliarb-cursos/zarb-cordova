@@ -36,6 +36,12 @@
     },
     "cordova-plugin-vibration": {
       "PACKAGE_NAME": "com.phonegap.chat"
+    },
+    "cordova-plugin-whitelist": {
+      "PACKAGE_NAME": "com.phonegap.chat"
+    },
+    "cordova-plugin-fcm": {
+      "PACKAGE_NAME": "com.phonegap.chat"
     }
   },
   "dependent_plugins": {

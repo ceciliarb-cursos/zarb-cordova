@@ -52,8 +52,24 @@ xrandr -o normal
 > cordova plugin add cordova-plugin-vibration
 	
 ----------------------------- AULA 5 ---------------------------------------------------------
-- figma (tipo photoshop)
-- marvel app (prototipos de tela)
-- adobe xd (prototipos de tela)
+. figma (tipo photoshop)
+. marvel app (prototipos de tela)
+. adobe xd (prototipos de tela)
+
+----------------------------- AULA 6 ---------------------------------------------------------
+. cordova plugin list
+  (lista plugins instalados)
+. cordova plugin add cordova-plugin-whitelist
+  (permite acessar urls e servicos de fora - tipo um config do cors)
+
+. cordova plugins add cordova-plugin-fcm
+  (para integrar com o push notifications do firebase)
+  https://www.ttmind.com/techpost/Firebase-Cloud-Messaging-FCM-using-Cordova-FCM-Plugin
+
+----------------------------- AULA 7 ---------------------------------------------------------
+. alternativa ao postman
+  https://insomnia.rest/
+
+
 
 
